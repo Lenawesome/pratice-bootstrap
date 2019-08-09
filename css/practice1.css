@@ -1,21 +1,30 @@
+.container{
+  max-width: 1170px ;
+  padding: 0;
+
+}
 .navbar{
-  width: 1170px;
-  padding: 23px 0;
-  margin : 0 auto;
+  height:98px;
+  padding:0; 
 }
 
 .navbar-brand{
   margin-right: 201px;
+  padding: 0;
 }
 
 .navbar-nav{
   font-family: raleway;
   font-weight: bold;
 }
-.nav-link{
+.raleway-font{
   font-family: raleway;
   font-size: 17px;
   color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+.nav-item a i {
+  color: black;
 }
 .nav-link::after{
   display: none;
@@ -51,12 +60,12 @@
 }
 .circle{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 53px;
+  height: 53px;
   border-radius:50%;
-  box-shadow: 0px 1px 58px 0px #f8f8f8;
+  box-shadow: 0px 0px 15px 2px #e0e0e0;
   top:0;
-  left:15px;
+  left:49px;
 }
 .menu-icon i{
   font-size: 22px;
@@ -89,4 +98,63 @@
   border-radius: 10px;
   bottom: 23px;
   right: 40px;
+}
+
+.background{
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 82px;
+  padding-bottom: 90px;
+  padding-left: 31px;
+
+}
+.breadcrumb-wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.breadcrumb{
+    background-color: transparent;
+}
+
+.breadcrumb-title,.breadcrumb-item{
+  color: white;
+  font-weight: bold;
+}
+
+.breadcrumb-title{
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+.breadcrumb-item{
+  padding-left: 0 !important;
+}
+.breadcrumb-item .path{
+  color: white;
+}
+.bread-red{
+  color: #c44860;
+}
+
+/* Mega menu */
+.megamenu-li{
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 1290px;
+  left: -55px;
+  margin: 0;
+  border-radius: 0;
+  padding: 60px;
+}
+.dropdown-item{
+  padding: 0;
+  padding-top: 25px;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  
 }

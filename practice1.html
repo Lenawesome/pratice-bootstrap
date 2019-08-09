@@ -18,99 +18,143 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 -->
-    <div class="container-flud">
-      <nav class="navbar navbar-expand-md">
-        <a href="#" class="navbar-brand">
-          <img src="images/logo.png" alt="arangi's logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
-          aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav menu-header">
-            <li class="nav-item active dropdown home-dropdown">
-              <a class="nav-link dropdown-toggle" id="home-dropdown" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Home <span class="sr-only">(current)</span>
-                <i class="ti-angle-down"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="home-dropdown">
-                  <a href="#" class="dropdown-item">Home 1</a>
-                  <a href="#" class="dropdown-item">Home 2</a>
-                  <a href="#" class="dropdown-item">Home 3</a>
+  <div class="container">
+    <nav class="navbar navbar-expand-xl">
+      <a href="#" class="navbar-brand">
+        <img src="images/logo.png" alt="arangi's logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+        aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav menu-header">
+          <li class="nav-item active dropdown home-dropdown megamenu-li">
+            <a class="nav-link raleway-font dropdown-toggle" id="home-dropdown" href="#" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home <span class="sr-only">(current)</span>
+              <i class="ti-angle-down"></i>
+            </a>
+            <div class="dropdown-menu megamenu" aria-labelledby="home-dropdown">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h5>Organic Skin Care</h5>
+                  <a href="#" class="dropdown-item">
+                    <img src="images/organic-pic.jpg" alt="organic-pic">
+                  </a>
+                  <a href="#" class="dropdown-item">Mask</a>
+                  <a href="#" class="dropdown-item">Whitening cream</a>
+                  <a href="#" class="dropdown-item">Serum</a>
+                  <a href="#" class="dropdown-item">Lotion</a>
+                </div>
+                <div class="col-lg-3">
+                  <h5>Mineral Makeup</h5>
+                  <img src="images/makeup.jpg" alt="makeup-pic">
+                  <a href="#" class="dropdown-item">Blush</a>
+                  <a href="#" class="dropdown-item">Lipstick</a>
+                  <a href="#" class="dropdown-item">Highlighter</a>
+                  <a href="#" class="dropdown-item">Eyeshadow</a>
+                  <a href="#" class="dropdown-item">Eyeliner</a>
+                </div>
+                <div class="col-lg-3">
+                  <h5>Organic nail care</h5>
+                  <img src="images/nail-care.jpg" alt="nailcare-pic">
+                  <a href="#" class="dropdown-item">3D nail</a>
+                  <a href="#" class="dropdown-item">Nail Tools</a>
+                  <a href="#" class="dropdown-item">Nail gel</a>
+                  <a href="#" class="dropdown-item">Nail polish</a>
+                  <a href="#" class="dropdown-item">Nail tools</a>
+                </div>
+                <div class="col-lg-3">
+                  <img src="images/organic-sale.jpg" alt="organicsale-pic">
+                </div>
               </div>
-            </li>
-            <li class="nav-item dropdown shop-dropdown">
-              <a class="nav-link dropdown-toggle shop-link" href="#" id="shop-dropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Shop
-                <i class="ti-angle-down"></i>
-              </a>
-              <div class="shop-badge">NEW</div>
-              <div class="dropdown-menu" aria-labelledby="shop-dropdown">
+            </div>
+          </li>
+          <li class="nav-item  dropdown shop-dropdown ">
+            <a class="nav-link raleway-font dropdown-toggle shop-link" href="#" id="shop-dropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shop
+              <i class="ti-angle-down"></i>
+            </a>
+            <div class="shop-badge">NEW</div>
+            <div class="dropdown-menu" aria-labelledby="shop-dropdown">
+            </div>
+          </li>
+          <li class="nav-item dropdown page-dropdown">
+            <a class="nav-link raleway-font dropdown-toggle" href="#" id="page-dropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Page
+              <i class="ti-angle-down"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="page-dropdown">
+            </div>
+          </li>
+          <li class="nav-item dropdown blogDropdown">
+            <a class="nav-link raleway-font dropdown-toggle" href="#" id="blogDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+              <i class="ti-angle-down"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="blogDropdown">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav menu-icon-header">
+          <li class="nav-item menu-icon">
+            <a href="" class="nav-link">
+              <i class="ti-user"></i>
+            </a>
+          </li>
+          <li class="nav-item menu-icon">
+            <a href="" class="nav-link">
+              <i class="ti-search"></i>
+            </a>
+          </li>
+          <li class="nav-item menu-icon">
+            <a href="" class="nav-link">
+              <i class="ti-shopping-cart notification">
+                <span class="badge">3</span>
+              </i>
 
-              </div>
-            </li>
-            <li class="nav-item dropdown page-dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="page-dropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Page
-                <i class="ti-angle-down"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="page-dropdown">
-              </div>
-            </li>
-            <li class="nav-item dropdown blogDropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Blog
-                <i class="ti-angle-down"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="blogDropdown">
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav menu-icon-header">
-            <li class="nav-item menu-icon">
-              <a href="" class="nav-link">
-                <i class="ti-user"></i>
-              </a>
-            </li>
-            <li class="nav-item menu-icon">
-              <a href="" class="nav-link">
-                <i class="ti-search"></i>
-              </a>
-            </li>
-            <li class="nav-item menu-icon">
-              <a href="" class="nav-link">
-                <i class="ti-shopping-cart notification">
-                  <span class="badge">3</span>
-                </i>
-
-              </a>
-            </li>
-            <li class="nav-item menu-icon">
-              <a href="" class="nav-link">
-                <span>
-                  <img src="images/list.png" alt="list image">
-                  <div class="circle"></div>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li class="nav-item menu-icon">
+            <a href="" class="nav-link">
+              <span>
+                <img src="images/list.png" alt="list image">
+                <div class="circle"></div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="background">
+    <div class="breadcrumb-wrapper">
+      <div class="breadcrumb-title raleway-font">
+        Style Guide
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-0 m-0">
+          <li class="breadcrumb-item "><a href="#" class="raleway-font text-uppercase bread-red">Home</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="#" class="raleway-font text-uppercase path">Style
+              guide</a></li>
+        </ol>
       </nav>
-      <div class="bread-crumb">
-        <div class="background">
-          <img src="images/background.jpg" alt="bread-crumb-background">
-        </div>
-        <!-- <ul class="bread-crumb-content">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Style Guide</a></li>
-        </ul> -->
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-6">
+
       </div>
     </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
