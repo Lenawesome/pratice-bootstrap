@@ -195,6 +195,8 @@
 .square{
   height: 70px;
   width: 70px;
+  position: relative;
+  margin-top: 50px;
 }
 .square-red{
   background-color: #c44860;
@@ -212,10 +214,13 @@
   background-color: #333333;
 }
 .square-color-code{
-  padding-top: 10px;
+  width: 70px;
   text-align: center;
   font-family: domine-regular;
   color :#797476;
+  position: absolute;
+  bottom:-38px;
+  left: 15px;
 }
 /* typography */
 .para{
