@@ -1,3 +1,23 @@
+@font-face{
+  font-family: raleway-semiBold;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face{
+  font-family: raleway-bold;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face{
+  font-family: domine-regular;
+  src: url(../fonts/Domine-Regular.ttf);
+}
+@font-face{
+  font-family: Raleway-ExtraBold;
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face{
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
 .container{
   max-width: 1170px ;
   padding: 0;
@@ -14,11 +34,11 @@
 }
 
 .navbar-nav{
-  font-family: raleway;
+  font-family: raleway-semiBold;
   font-weight: bold;
 }
 .raleway-font{
-  font-family: raleway;
+  font-family: raleway-semiBold;
   font-size: 17px;
   color: rgb(51, 51, 51);
   font-weight: bold;
@@ -107,8 +127,6 @@
   background-size: cover;
   padding-top: 82px;
   padding-bottom: 90px;
-  padding-left: 31px;
-
 }
 .breadcrumb-wrapper{
   width: 1170px;
@@ -122,6 +140,7 @@
 .breadcrumb-title,.breadcrumb-item{
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .breadcrumb-title{
@@ -133,9 +152,12 @@
 }
 .breadcrumb-item .path{
   color: white;
+  padding-left: 5px;
+  font-size: 14px;
 }
 .bread-red{
   color: #c44860;
+  font-size: 14px;
 }
 
 /* Mega menu */
@@ -156,5 +178,185 @@
   padding-top: 25px;
 }
 .breadcrumb-item+.breadcrumb-item::before{
+  display: none;
+}
+
+/* content */
+.spacing-left{
+  margin-top: 110px;
+}
+.title{
+  font-size: 35px; 
+  font-family: raleway-semiBold;
+}
+.content{
+  margin-top: 25px;
+}
+.square{
+  height: 70px;
+  width: 70px;
+}
+.square-red{
+  background-color: #c44860;
+}
+.square-blue{
+  background-color: #5892d0;
+}
+.square-green{
+  background-color: #4d772d;
+}
+.square-gray{
+  background-color: #797476;
+}
+.square-black{
+  background-color: #333333;
+}
+.square-color-code{
+  padding-top: 10px;
+  text-align: center;
+  font-family: domine-regular;
+  color :#797476;
+}
+/* typography */
+.para{
+  font-size: 15px;
+  font-family: domine-regular;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+.text-link>a{
+  text-decoration: none;
+}
+.text-link{
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+a.normal-link, a.hover-normal-link{
+  display: inline-block;
+  padding-right: 24px;
+  font-family: raleway-bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+a.normal-link:hover,a.uppercase-link:hover{
+  color: #c44860 !important;
+  cursor: pointer;
+}
+a.hover-normal-link, a.hover-upper-link{
+  color: #c44860 !important;
+  cursor: pointer;
+}
+.uppercase-link, .hover-upper-link{
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: Raleway-ExtraBold;
+  font-size: 13px;
+  padding-right: 24px;
+}
+
+.fa-caret-left{
+  margin-right: 10px;
+}
+
+/* text-header */
+h1,h2,h3,h4,h5{
+  font-family: raleway-bold !important;
+  margin:0;
+  padding:0;
+  padding-bottom: 20px;
+}
+h1{
+  font-size: 35px !important;
+}
+h2{
+  font-size: 30px !important;
+}
+h3{
+  font-size: 25px !important;
+}
+h4{
+  font-size: 14px !important;
+}
+h5{
+  font-size: 13px !important;
+}
+
+/* add to cart button */
+.add-to-cart-btn-hover{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C2485E), color-stop(100%, #F2AC79));
+  padding: 15px 40px 15px 40px;
+  border-radius: 80px;
+  border: transparent;
+  color: white;
+  font-family: Raleway-Regular;
+  font-size: 18px;
+}
+
+.add-to-cart-btn-wrap{
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C2485E), color-stop(100%, #F2AC79));
+  border-radius: 80px;
+  padding: 3px;
+  font-family: Raleway-Regular;
   
+}
+.ti-arrow-right{
+  padding-left: 28px;
+  padding-right: 24px;
+  color: #aba7a8;
+  font-size: 18px;
+}
+.add-to-cart-btn{
+  border: transparent;
+  border-radius: 80px;
+  background: white;
+  color: black;
+  padding: 13.5px 38.5px 13.5px 38.5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.btn-special{
+  padding-top: 80px;
+}
+.add-to-cart-spc-btn,.add-to-cart-spc-btn-hover{
+  background: #c44860;
+  padding: 15px 40px 15px 40px;
+  border-radius: 80px;
+  border: transparent;
+  color: white;
+  font-family: Raleway-Regular;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.add-to-cart-spc-btn-hover{
+ background: #f4ae7b;
+}
+.add-to-cart-btn,.add-to-cart-spc-btn,.add-to-cart-btn-hover,.add-to-cart-spc-btn-hover{
+  position: relative;
+}
+.add-to-cart-spc-btn::after,.add-to-cart-btn::after{
+  content: "Active";
+  font-family: domine-regular;
+  font-size: 15px;
+  position: absolute;
+  color: #8e8a8b;
+  bottom: -39px;
+  left: 68px;
+}
+.add-to-cart-spc-btn-hover::after,.add-to-cart-btn-hover::after{
+  content: "Hover";
+  font-family: domine-regular;
+  font-size: 15px;
+  position: absolute;
+  color: #8e8a8b;
+  bottom: -39px;
+  left: 68px;
+}
+
+.add-to-cart-spc-btn:hover{
+  background: #f4ae7b;
+}
+.add-to-cart-btn:hover{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C2485E), color-stop(100%, #F2AC79));
+  color: white;
 }
