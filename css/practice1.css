@@ -173,9 +173,17 @@
   border-radius: 0;
   padding: 60px;
 }
-.dropdown-item{
+.sub-menu>a{
+/*
   padding: 0;
-  padding-top: 25px;
+  padding-bottom: 25px;
+    
+*/
+    padding: 0;
+    padding-bottom: 20px;
+}
+.sub-menu a:first-child{
+    padding: 0;
 }
 .breadcrumb-item+.breadcrumb-item::before{
   display: none;

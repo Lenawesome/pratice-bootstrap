@@ -1,0 +1,47 @@
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+/*
+    flex-direction:row-reverse;
+    flex-wrap: wrap-reverse;
+    
+*/
+    height: 500px;
+/*    flex-flow: row wrap;*/
+/*    justify-content: space-evenly;*/
+/*    align-content:space-around;*/
+}
+
+.flex-container > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+
+.flex-container > div:last-child{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+/*    flex-shrink: 10;*/
+    flex-basis: 
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-bottom: 50px;
+}
+img::after{
+    content: "Something here";
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
