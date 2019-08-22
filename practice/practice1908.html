@@ -1,0 +1,169 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--sorting array-->
+    <!--
+    <p>Click buttons below to sort array</p>
+    <p id="my-array-from-begining"></p>
+    <button onclick="sortASC()">Click here to sort ASC</button>
+    <button onclick="sortDSC()">Click here to sort DSC</button>
+    <button onclick="shuffle()">Click here shuffle array</button>
+    <p id="my-array"></p>
+    
+    <script>
+        var myArray = [12,123,123,132,245,34,45,6456,58,23,53,61,1];
+        document.getElementById("my-array-from-begining").innerHTML = myArray;
+        
+        function sortASC(){
+            myArray.sort(function(a,b){return a-b});
+            document.getElementById("my-array").innerHTML = myArray;
+        }
+        
+        function sortDSC(){
+            sortASC();
+            myArray.reverse();
+            document.getElementById("my-array").innerHTML = myArray;
+        }
+        function shuffle(){
+            myArray.sort(function(a,b){return 0.5-Math.random()});
+            document.getElementById("my-array").innerHTML = myArray;
+        }
+    </script>
+-->
+    <!--Sorting object-->
+<!--
+    <p>Sorting object array</p>
+    <p id="my-object-array"></p>
+    <button onclick="sortByAge()">Click to sort by age</button>
+    <p id="result"></p>
+
+    <script>
+        var person = [{name:"le ngoc anh",age:23},{name:"nguyen van kien",age:22}];
+        displayPerson("my-object-array");
+        function displayPerson(idElement){
+            var stringListPerson = "";
+            for(var i = 0; i<person.length;i++){
+                stringListPerson += person[i].name + " " + person[i].age + "<br>";
+            }
+            document.getElementById(idElement).innerHTML = stringListPerson;
+        }
+        function sortByAge(){
+            person.sort(function(a,b){return a.age-b.age});
+            displayPerson("result");
+        }
+    </script>
+-->
+<!--
+<script>
+    var myArray = [1,2,3,4,5,6,6,7,8,9];
+    var newArray = myArray.filter(myFunction);
+    function myFunction(value,index,array){
+        return value>3;
+    }
+    document.write(newArray);
+</script>
+-->
+
+<!--
+<script>
+    var myArray = [1,2,3,4,5];
+    var newArray = myArray.reduce(sum,100);
+    function sum(result,value,index,array){
+        return result+value;
+    }
+    document.write(newArray);
+</script>
+-->
+<!--every() check if all elements in array pass condition in the function pass to it-->
+<!--
+<script>
+    var naArray = [1,3,23,452,345,2345,1234];
+    var isPassed = naArray.every(condition);
+    function condition(value){
+        return value < 9999;
+    }
+    document.write(isPassed);
+</script>
+-->
+
+<!--some() return boolean check if some element in array pass condition-->
+<!--
+<script>
+    var myArray = [1,2,32,42,354,23,54];
+    var isPassed = myArray.some(condition);
+    function condition(value){
+        return value > 900;
+    }
+    document.write(isPassed);
+</script>
+-->
+
+<!--find() return first element that pass the condition in the function give to it-->
+<!--
+<script>
+    var myArray = [1,1,31,23,123,123,123];
+    var firstValuePasses = myArray.find(condition);
+    function condition(value){
+        return value > 23;
+    }
+    document.write(firstValuePasses);   
+</script>
+-->
+<!--
+<script>
+    var today = new Date();
+    document.write(today.getTime()+" milisecond");
+    </script>
+-->
+
+<script>
+//    var day = "";
+//    switch (new Date().getDay()){
+//        case 0:
+//            day = "Sunday";
+//            break;
+//        case 1:
+//            day = "Monday";
+//            break;
+//        case 2:
+//            day = "Tuesday";
+//            break;
+//        case 3:
+//            day = "Wednesday";
+//            break;
+//        case 4:
+//            day = "Thursday";
+//            break;
+//        case 5:
+//            day = "Firday";
+//            break;
+//        case 6:
+//            day = "Saturday";
+//            break;
+//    }
+//    document.write(day);
+    
+// loop through all properties in object
+    
+//    var cars = {ten:'oto',hang:'na',namsx:2001};
+//    var text = "";
+//    for(var carProperties in cars){
+//        text += carProperties + " ";
+//    }
+//    document.write(text);
+</script>
+
+<script>
+    const reg2 = (/xinchao/);
+    const reg1 = new RegExp('xinchao');
+    var myString = "xinchao le ngoc anh";
+    document.write(reg2.test(myString));
+    
+
+</script>
+
+</body>
+</html>

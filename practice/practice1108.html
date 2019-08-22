@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/practice1108.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Practice 1108</title>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+    <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+</head>
+
+<body>
+
+    <!--
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        
+        
+
+    </div>
+-->
+    <!-- <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-danger"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-info"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-warning"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-primary"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-success"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-dark"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-success"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-dark"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-warning"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-info"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-danger"><img src="" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center bg-info"><img src="" alt=""></div>
+            </div>
+        </div> -->
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button>
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#naModal">Buton danger</button>
+
+    <!-- Na Modal -->
+
+    <div class="modal fade" id="naModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <h5>Popover in a modal</h5>
+                        <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+                        <hr>
+                        <h5>Tooltips in a modal</h5>
+                        <p><a href="#" data-toggle="tooltip" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+    
+</body>
+
+</html>
