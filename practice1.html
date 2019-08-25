@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>Pratice 1</title>
   <meta name="viewport" content="width=device-width, inital-scale=1">
-  <!--    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/practice1.css">
   <link rel="stylesheet" href="themify-icons.css">
 </head>
+
 <body>
   <!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -61,7 +62,7 @@
                   <a href="#" class="dropdown-item">
                     <img src="images/nail-care.jpg" alt="nailcare-pic">
                   </a>
-                  
+
                   <a href="#" class="dropdown-item">3D nail</a>
                   <a href="#" class="dropdown-item">Nail Tools</a>
                   <a href="#" class="dropdown-item">Nail gel</a>
@@ -124,8 +125,8 @@
           <li class="nav-item menu-icon">
             <a href="" class="nav-link">
               <span></span>
-                <img src="images/list.png" alt="list image">
-                <div class="circle"></div>
+              <img src="images/list.png" alt="list image">
+              <div class="circle"></div>
               </span>
             </a>
           </li>
@@ -206,15 +207,69 @@
               <button class="add-to-cart-spc-btn-hover">+ Add to cart</button>
             </div>
           </div>
+
+          <button class="my-btn">
+            <i onclick="minus()" class="ti-minus"></i>
+            <div id="my-btn__quantity" class="my-btn__quantity">1</div>
+            <i onclick="plus()" class="ti-plus"></i>
+          </button>
+
         </div>
         <div class="style-button-size spacing-left">
-
+          <div class="title">
+            Button sizes
+          </div>
+          <div class="content">
+            <div class="normal-button-wrapper">
+              <button class="normal-button">+ Add to cart</button>
+            </div>
+            <div class="normal-button-sm-wrapper">
+              <button class="normal-button normal-button-sm ">+ Add to cart</button>
+            </div>
+            <div class="normal-button-xs-wrapper">
+              <button class="normal-button normal-button-xs">+ Add to cart</button>
+            </div>
+          </div>
         </div>
         <div class="style-list spacing-left">
-
+          <div class="title">
+            Lists
+          </div>
+          <div class="content row">
+            <ul class="list list-no-style col-4">
+              <li class="list-item"> <a class="list-link list-link-dashed" href="#">My account</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dashed" href="#">My cart</a></li>
+              <li class="list-item"> <a class="list-link list-link-dashed" href="#">Login</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dashed" href="#">Wishlist</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dashed" href="#">Checkout</a></li>
+            </ul>
+            <ul class="list list-no-style col-4">
+              <li class="list-item"> <a class="list-link list-link-dot" href="#">My account</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dot" href="#">My cart</a></li>
+              <li class="list-item"> <a class="list-link list-link-dot" href="#">Login</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dot" href="#">Wishlist</a> </li>
+              <li class="list-item"> <a class="list-link list-link-dot" href="#">Checkout</a></li>
+            </ul>
+            <ol class="list list-no-style list-number col-4">
+              <li class="list-item list-item-counter"> <a class="list-link list-link-counter" href="#">My account</a>
+              </li>
+              <li class="list-item list-item-counter"> <a class="list-link list-link-counter" href="#">My cart</a></li>
+              <li class="list-item list-item-counter"> <a class="list-link list-link-counter" href="#">Login</a> </li>
+              <li class="list-item list-item-counter"> <a class="list-link list-link-counter" href="#">Wishlist</a>
+              </li>
+              <li class="list-item list-item-counter"> <a class="list-link list-link-counter" href="#">Checkout</a></li>
+            </ol>
+          </div>
         </div>
         <div class="style-alerts spacing-left">
-
+          <div class="title">
+            Alerts
+          </div>
+          <div class="content">
+            <div class="alert-field alert-field-success">Success message</div>
+            <div class="alert-field alert-field-notification">Notification text</div>
+            <div class="alert-field alert-field-warning">Warning display</div>
+          </div>
         </div>
       </div>
       <div class="col-6">
@@ -222,11 +277,16 @@
           <div class="title">Typography</div>
           <div class="content">
             <div class="para">
-                Domine Regular 15/26px<br>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+              Domine Regular 15/26px<br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic
             </div>
             <div class="para">
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions .
+              typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+              PageMaker including versions .
             </div>
             <div class="text-link">
               <a class="normal-link">Text link</a>
@@ -244,33 +304,104 @@
           </div>
         </div>
         <div class="my-form spacing-left">
-            <div class="title">Forms</div>
-            <label for="text-field">Text Field</label>
-            <input  class="my-text-field"type="text" id="text-field">
-            <label for="text-field-dropdown">Text Field Dropdown</label>
-            <select class="text-field" name="text-field-dropdown" id="text-field-dropdown">
-                <option selected value="Aus">Australia</option>
+          <div class="title">Forms</div>
+          <label class="my-form__label" for="text-field">Text Field</label>
+          <input class="my-text-field" type="text" id="text-field">
+          <label class="my-form__label" for="text-field-dropdown">Text Field Dropdown</label>
+          <select class="text-field" name="text-field-dropdown" id="text-field-dropdown">
+            <option selected value="Aus">Australia</option>
+          </select>
+          <label class="my-form__label" for="text-field-focus">Text Field Focus</label>
+          <input class="my-text-field text-field-focus" type="text" id="text-field-focus">
+          <div class="error-form">
+            <label class="my-form__label" for="text-field-error">Text Field Error</label>
+            <input class="my-text-field text-field-error" type="text" id="text-field-error">
+            <p class="error-msg">Please enter email address </p>
+          </div>
+          <div class="multiple-select">
+            <select multiple="multiple" size="5" name="" id="">
+              <option class="" value="">Option 1</option>
+              <option class="" value="">Option 2</option>
+              <option class="" value="">Option 3</option>
+              <option class="" value="">Option 4</option>
+              <option class="" value="">Option 5</option>
             </select>
-            <label  for="text-field-focus">Text Field Focus</label>
-            <input class="my-text-field text-field-focus" type="text" id="text-field-focus">
-            <div class="error-form">
-              <label for="text-field-error">Text Field Error</label>
-              <input class="my-text-field text-field-error"type="text" id="text-field-error">
-              <p class="error-msg">Please enter email address </p>
-            </div>
-            <div class="multiple-select">
-              <select multiple="multiple" size="5" name="" id="">
-                  <option class="" value="">Option 1</option>
-                  <option class="" value="">Option 2</option>
-                  <option class="" value="">Option 3</option>
-                  <option class="" value="">Option 4</option>
-                  <option class="" value="">Option 5</option>
-              </select>
+          </div>
+          <form class="radioform" action="">
+            <div class="row">
+              <div class="col-4">
+                <label class="radio-container" for="radioRounded1">
+                  Default
+                  <input id="radioRounded1" name="checkbox" class="radio-container__input" type="checkbox" checked>
+                  <div class="radio-container__checkmark radio-container__checkmark--square"></div>
+                </label>
+                <label class="radio-container" for="radioRounded2">
+                  Selected
+                  <input id="radioRounded2" name="checkbox" class="radio-container__input" type="checkbox">
+                  <div class="radio-container__checkmark radio-container__checkmark--square"></div>
+                </label>
+              </div>
+              <div class="col-4">
+                <label class="radio-container" for="radioSquare1">
+                  Default
+                  <input id="radioSquare1" name="checkbox" class="radio-container__input" type="checkbox">
+                  <div class="radio-container__checkmark radio-container__checkmark--rounded"></div>
+                </label>
+                <label class="radio-container" for="radioSquare2">
+                  Selected
+                  <input id="radioSquare2" name="checkbox" class="radio-container__input" type="checkbox">
+                  <div class="radio-container__checkmark radio-container__checkmark--rounded"></div>
+                </label>
               </div>
             </div>
+          </form>
+        </div>
+        <div class="my-pagination">
+          <div class="title">
+            Paginations
           </div>
+          <div class="content pagi-content">
+            <div class="pagination-circle-dot-wrapper" >
+              <a class="pagination-circle-dot" href="#"></a>
+              <a class="pagination-circle-dot" href="#"></a>
+              <a class="pagination-circle-dot" href="#"></a>
+            </div>
+            <div class="pagination-txt-btn">
+              <a href="#" class="pre-btn">
+                Prev
+              </a>
+              <a href="#" class="nxt-btn">
+                Next
+              </a>
+            </div>
+            <div class="pagination-numb-btn">
+                <a href="#" class="pre-btn">
+                    Prev
+                  </a>
+                  <a href="#" class="numb-btn-circle">1</a>
+                  <a href="#" class="numb-btn-circle">2</a>
+                  <a href="#" class="numb-btn-circle">3</a>
+                </div>
+              </div>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+    function minus() {
+      var txt = document.getElementById("my-btn__quantity").textContent;
+      var x = Number(txt);
+      x -= 1;
+      document.getElementById("my-btn__quantity").innerHTML = x;
+    }
+
+    function plus() {
+      var txt = document.getElementById("my-btn__quantity").textContent;
+      var x = Number(txt);
+      x += 1;
+      document.getElementById("my-btn__quantity").innerHTML = x;
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
