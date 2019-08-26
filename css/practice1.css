@@ -32,28 +32,28 @@
   src: url(../fonts/Raleway-Regular.ttf);
 }
 
+body{
+  padding-bottom: 300px;
+}
 html {
   background-color: #faf9f7;
 }
 
 .container {
   max-width: 1170px;
-  padding: 0;
 }
 
 .navbar {
-  height: 98px;
-  padding: 0;
+  padding: 33px 0;
 }
-
 .navbar-brand {
-  margin-right: 201px;
+  margin: 0;
   padding: 0;
 }
 
-.navbar-nav {
+.navbar-nav.menu-icon-header{
   font-family: raleway-semiBold;
-  font-weight: bold;
+  margin-left: 53px;
 }
 
 .raleway-font {
@@ -65,31 +65,32 @@ html {
 
 .nav-item a i {
   color: black;
+  padding-left:1px;
+  display: inline-block;
 }
-
+.nav-link{
+  padding: 14px 0 14px 0 !important;
+}
 .nav-link::after {
   display: none;
 }
 
 .home-dropdown {
-  padding-right: 18px;
+  padding-left:62px;
+  padding-right:33px;
 }
 
 .shop-dropdown {
-  padding-right: 22px;
+  padding-right: 37px;
 }
 
 .page-dropdown {
-  padding-right: 21px;
+  padding-right:36px;
 }
+
 
 .menu-header {
-  margin-right: 218px;
-}
-
-.menu-header .dropdown-toggle {
-  padding: 14px;
-  padding-bottom: 0;
+  width: 100%;
 }
 
 .ti-angle-down {
@@ -97,8 +98,8 @@ html {
 }
 
 .menu-icon {
-  padding: 6px;
-  padding-bottom: 0px;
+  padding: 7px 26px 0 0;
+
 }
 
 .menu-icon:last-child {
@@ -110,12 +111,12 @@ html {
 
 .circle {
   position: absolute;
-  width: 53px;
-  height: 53px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   box-shadow: 0px 0px 15px 2px #e0e0e0;
-  top: 0;
-  left: 49px;
+  top: 4px;
+  left: 40px;
 }
 
 .menu-icon i {
@@ -147,10 +148,11 @@ html {
   font-size: 10px;
   color: white;
   background: #c44860;
-  padding: 2px 10px;
+  padding: 2px 11px;
   border-radius: 10px;
-  bottom: 23px;
-  right: 40px;
+  bottom: 38px;
+  right: 47px;
+  font-family: raleway-semibold;
 }
 
 .background {
@@ -851,7 +853,8 @@ button:focus{
   display: inline-block;
   margin-right: 13px;
 }
-.pagination-circle-dot:hover.pagination-circle-dot::after{
+
+.pagination-circle-dot:focus.pagination-circle-dot::after{
   content: "";
   position: absolute;
   top:2.5px;
