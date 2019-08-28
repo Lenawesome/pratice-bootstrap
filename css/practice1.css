@@ -1,3 +1,7 @@
+/* @font-face {
+  font-family: sail-regular;
+  src: url(../fonts/Sail-Regular.ttf);
+}
 @font-face {
   font-family: raleway-semiBold;
   src: url(../fonts/Raleway-SemiBold.ttf);
@@ -18,8 +22,8 @@
 }
 
 @font-face {
-  font-family: domine-regular;
-  src: url(../fonts/Domine-Regular.ttf);
+  font-family: 'Domine';
+  src: url(../fonts/'Domine'.ttf);
 }
 
 @font-face {
@@ -30,8 +34,13 @@
 @font-face {
   font-family: Raleway-Regular;
   src: url(../fonts/Raleway-Regular.ttf);
-}
+} */
+@import url('https://fonts.googleapis.com/css?family=Domine|Raleway:400,500,600,700,800|Sail&display=swap');
 
+.sail-font{
+  font-family: 'Sail', cursive !important;
+  font-weight: 400;
+}
 body{
   padding-bottom: 300px;
 }
@@ -41,10 +50,14 @@ html {
 
 .container {
   max-width: 1170px;
+  padding: 0;
 }
 
 .navbar {
-  padding: 33px 0;
+  padding: 32px 0 32px 0;
+}
+.col-3.p-left{
+  padding-left: 13px;
 }
 .navbar-brand {
   margin: 0;
@@ -52,15 +65,17 @@ html {
 }
 
 .navbar-nav.menu-icon-header{
-  font-family: raleway-semiBold;
+  font-family: 'Raleway';
+  font-weight: 600; 
+  /* semi bold */
   margin-left: 53px;
 }
 
 .raleway-font {
-  font-family: raleway-semiBold;
+  font-family: 'Raleway';
   font-size: 17px;
   color: rgb(51, 51, 51);
-  font-weight: bold;
+  font-weight: 600 !important;
 }
 
 .nav-item a i {
@@ -69,14 +84,14 @@ html {
   display: inline-block;
 }
 .nav-link{
-  padding: 14px 0 14px 0 !important;
+  padding: 15px 0 14px 0 !important;
 }
 .nav-link::after {
   display: none;
 }
 
 .home-dropdown {
-  padding-left:62px;
+  padding-left:53px;
   padding-right:33px;
 }
 
@@ -97,6 +112,10 @@ html {
   font-size: 11px;
 }
 
+.menu-icon-header{
+  padding-left: 30px;
+}
+
 .menu-icon {
   padding: 7px 26px 0 0;
 
@@ -104,11 +123,10 @@ html {
 
 .menu-icon:last-child {
   padding-bottom: 9px;
-  padding-left: 56px;
+  padding-left: 54px;
   position: relative;
   padding-right: 0;
 }
-
 .circle {
   position: absolute;
   width: 55px;
@@ -116,7 +134,7 @@ html {
   border-radius: 50%;
   box-shadow: 0px 0px 15px 2px #e0e0e0;
   top: 4px;
-  left: 40px;
+  left: 35px;
 }
 
 .menu-icon i {
@@ -131,12 +149,16 @@ html {
   position: absolute;
   width: 20px;
   height: 20px;
-  bottom: 4px;
-  left: 18px;
+  bottom: 6px;
+  left: 20px;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
-  background: #c44860
+  background: #c44860;
+  font-family: 'Raleway';
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .shop-link {
@@ -152,7 +174,8 @@ html {
   border-radius: 10px;
   bottom: 38px;
   right: 47px;
-  font-family: raleway-semibold;
+  font-family: 'Raleway';
+  font-weight: 600;
 }
 
 .background {
@@ -276,7 +299,7 @@ html {
 .square-color-code {
   width: 70px;
   text-align: center;
-  font-family: domine-regular;
+  font-family: 'Domine';
   color: #797476;
   position: absolute;
   bottom: -38px;
@@ -286,7 +309,7 @@ html {
 /* typography */
 .para {
   font-size: 15px;
-  font-family: domine-regular;
+  font-family: 'Domine';
   line-height: 26px;
   padding-bottom: 20px;
 }
@@ -304,7 +327,8 @@ a.normal-link,
 a.hover-normal-link {
   display: inline-block;
   padding-right: 24px;
-  font-family: raleway-bold;
+  font-family: 'Raleway';
+  font-weight: 700;
   font-size: 18px;
   cursor: pointer;
 }
@@ -340,10 +364,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: raleway-bold !important;
+  font-family: 'Raleway' !important;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
+  font-weight: 700;
 }
 
 h1 {
@@ -373,7 +398,7 @@ h5 {
   border-radius: 80px;
   border: transparent;
   color: white;
-  font-family: Raleway-Regular;
+  font-family: 'Raleway';
   font-size: 18px;
 }
 
@@ -382,7 +407,7 @@ h5 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C2485E), color-stop(100%, #F2AC79));
   border-radius: 80px;
   padding: 3px;
-  font-family: Raleway-Regular;
+  font-family: 'Raleway';
 
 }
 
@@ -414,7 +439,7 @@ h5 {
   border-radius: 80px;
   border: transparent;
   color: white;
-  font-family: Raleway-Regular;
+  font-family: 'Raleway';
   font-size: 18px;
   transition: 0.3s;
 }
@@ -430,21 +455,21 @@ h5 {
   position: relative;
 }
 
-.add-to-cart-spc-btn::after,
+/* .add-to-cart-spc-btn::after,
 .add-to-cart-btn::after {
   content: "Active";
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   position: absolute;
   color: #8e8a8b;
   bottom: -39px;
   left: 68px;
-}
+} */
 
 .add-to-cart-spc-btn-hover::after,
 .add-to-cart-btn-hover::after {
   content: "Hover";
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   position: absolute;
   color: #8e8a8b;
@@ -467,7 +492,7 @@ h5 {
   border-radius: 80px;
   border: transparent;
   color: white;
-  font-family: Raleway-Regular;
+  font-family: 'Raleway';
   font-size: 18px;
   transition: 0.3s;
   margin-right: 25px;
@@ -475,11 +500,11 @@ h5 {
 .normal-button-sm{
   padding: 9px 30px;
   font-size: 15px;
-  font-family: raleway-medium;
+  font-family: 'Raleway';
 }
 .normal-button-xs{
   padding: 6px 22px;
-  font-family: raleway-medium;
+  font-family: 'Raleway';
   font-size: 13px;
 }
 
@@ -493,7 +518,7 @@ h5 {
   position: absolute;
   bottom: -42px;
   left: 28px;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   color: #989495;
 }
@@ -502,7 +527,7 @@ h5 {
   position: absolute;
   bottom: -46px;
   left: 18px;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   color: #989495;
 }
@@ -511,7 +536,7 @@ h5 {
   position: absolute;
   bottom: -33px;
   left: 43px;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   color: #989495;
 }
@@ -521,7 +546,7 @@ h5 {
   list-style: none;
 }
 .list-link{
-  font-family: domine-regular;
+  font-family: 'Domine';
   color: #797476;
   font-size: 15px;
 }
@@ -566,7 +591,7 @@ h5 {
 .list-link-counter::before{
   content: counter(my-awesome-counter) ". ";
   color:#8e8a8b;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
 }
 .list-link-counter:hover.list-link-counter::before{
@@ -578,7 +603,7 @@ h5 {
   padding: 12px 27px;
   margin-bottom: 9px;
   color: #fef4f5;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 14px;
   position: relative;
 }
@@ -709,7 +734,7 @@ button:focus{
 }
 
 .my-form__label {
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -735,7 +760,7 @@ button:focus{
   position: absolute;
   bottom: -50px;
   left: 0;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 15px;
   color: #c44860;
 }
@@ -767,7 +792,7 @@ button:focus{
   border-bottom: 1px dashed #d2d2d2;
   padding: 17px 0 15px 0;
   font-size: 15px;
-  font-family: domine-regular;
+  font-family: 'Domine';
 }
 
 .multiple-select select option:last-child {
@@ -788,7 +813,7 @@ button:focus{
   margin-bottom: 20px;
   -webkit-user-select: none;
   cursor: pointer;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 14px;
   letter-spacing: 0.5px;
 }
@@ -874,7 +899,8 @@ button:focus{
   padding: 3px 15px;
   border-radius: 25px;
   text-transform: uppercase;
-  font-family:  raleway-bold;
+  font-family:  'Raleway';
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.5px;
   color: #494948;
@@ -892,7 +918,7 @@ button:focus{
   display: inline-block;
   color: #494948;
   border: 1px solid #eeeeee;
-  font-family: domine-regular;
+  font-family: 'Domine';
   font-size: 14px;
   background-color: white !important;
 }

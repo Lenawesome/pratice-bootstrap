@@ -1,0 +1,86 @@
+.slider-img {
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 890px;
+}
+
+.menu-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.slider-txt {
+    /* display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+    width: 1170px; */
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-txt-wrapper {
+    /* text-align: center;
+    padding: 103px 0 0 54px;
+    display: inline-block; */
+    position: absolute;
+    top: 42.6%;
+    right: 30px;
+    width: 683px;
+}
+
+.text-gradient {
+    background: -moz-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(196,72,96,1)), color-stop(1%, rgba(196,72,96,1)), color-stop(100%, rgba(244,174,123,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c44860', endColorstr='#f4ae7b',GradientType=0 ); /* ie6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0;
+    line-height: 1;
+}
+.title-size{
+    font-size:140px !important;
+    letter-spacing: -3.5px;
+    margin-bottom: 2px;
+}
+.raleway-font-regular{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.sub-title-size{
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 9px;
+}
+.sub-title{
+    margin-left: 66px;
+}
+.btn-wrap{
+    margin-top: 22px;
+    margin-left: 63px;
+    text-align: center;
+}
+.owl-carousel-wrapper{
+    position: relative;
+}
+.owl-dots{
+    transform:rotate(90deg);
+    position: absolute;
+    top: 30%;
+}
