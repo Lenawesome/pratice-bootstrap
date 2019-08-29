@@ -26,15 +26,17 @@
     margin: 0 auto;
     position: relative;
 }
-
+.slider-img img{
+    width: 100%;
+}
 .slider-txt-wrapper {
     /* text-align: center;
     padding: 103px 0 0 54px;
     display: inline-block; */
-    position: absolute;
+    /* position: absolute;
     top: 42.6%;
     right: 30px;
-    width: 683px;
+    width: 683px; */
 }
 
 .text-gradient {
@@ -76,6 +78,7 @@
     margin-left: 63px;
     text-align: center;
 }
+/* Owl dot pagination */
 .owl-carousel-wrapper{
     position: relative;
 }
@@ -84,3 +87,33 @@
     position: absolute;
     top: 30%;
 }
+.owl-theme .owl-dots .owl-dot span{
+    background: transparent;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #c44860;
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    margin:3px !important;
+    padding: 0 !important;
+    
+}
+.owl-carousel button.owl-dot{
+    border-radius: 50%;
+    border: 2px solid #efd5d8;
+    width: 15px; 
+    height: 15px;
+    margin-right: 10px;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: #c44860;
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    margin:3px !important;
+    padding: 0 !important;
+}
+/* end pagination dot */
