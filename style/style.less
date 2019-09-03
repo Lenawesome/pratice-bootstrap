@@ -51,8 +51,119 @@
     }
 }
 
-.img-sm, .img-md{
+.img-sm, .img-md,.img-lg{
     width: 100%;
-    height: 100%;
-    padding: 4px;
+    position: relative;
+    transition: all .2s ease-in-out;
 }
+// .grow { transition: all .2s ease-in-out; }
+.grow:hover .img-md,.grow:hover .img-sm,.grow:hover .img-lg { 
+    transform: scale(1.1);
+ }
+ .fixed-img{
+     overflow: hidden !important;
+     margin: 5px;
+ }
+.gradient-border::before{
+    content: "";
+    z-index: 10;
+    border: 10px solid;
+    border-image-source: linear-gradient(#c44860, #f4ae7b);
+    border-image-slice: 5;
+    margin: 1.875rem;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    opacity: .5;
+}
+
+.text-top-left{
+    position: absolute;
+    top: 15%;
+    left:15%;
+    // padding: 40px 34px;
+}
+.text-bottom-right{
+    position: absolute;
+    top:15%;
+    right: 15%;
+    .text-content{
+        // margin: 0px 49px 120px 0px ;
+        .text-title,.text-sub-title{
+            text-align: right;
+        }
+    }   
+    .text-content.lg-img{
+        // margin: 40px 100px;
+        .text-title,.text-sub-title{
+            font-size: 30px;
+        }
+    }
+    .text-content.lg-img-right{
+         margin: 20px 24px;
+        .text-title,.text-sub-title{
+            
+            font-size: 30px;
+        }
+    }
+}
+.text-bottom-left{
+    position: absolute;
+    top:15%;
+    right: 15%;
+    .text-content{
+        // margin: 0px 49px 120px 0px ;
+        &.lg-img-left{
+            // margin: 20px 24px;
+           .text-title,.text-sub-title{
+               font-size: 30px;
+               text-align: left;
+           }
+       }  
+    } 
+
+}
+.text-middle-right{
+    position: absolute;
+    top:15%;
+    right: 15%;
+}
+.text-bottom-middle{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .text-content-middle{
+        width: 200px;
+        .text-title,.text-sub-title{
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.text-content{
+    border-bottom: 1px solid #c44961;
+    padding-bottom: 6px;
+}
+.text-title{
+    color: #494848;
+}
+.text-sub-title{
+    color: #c44961;
+}
+.text-title, .text-sub-title{
+    font-size: 1.25rem;
+}
+
+
