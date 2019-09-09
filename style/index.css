@@ -74,7 +74,7 @@
     margin-left: 66px;
 }
 .btn-wrap{
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: 63px;
     text-align: center;
 }
@@ -82,7 +82,7 @@
 .owl-carousel-wrapper{
     position: relative;
 }
-.owl-dots{
+.owl-carousel-home .owl-dots{
     transform:rotate(90deg);
     position: absolute;
     top: 30%;

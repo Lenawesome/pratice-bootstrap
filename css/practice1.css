@@ -53,11 +53,11 @@ html {
   padding: 0;
 }
 
-.navbar {
-  padding: 32px 0 32px 0;
-}
 .col-3.p-left{
   padding-left: 13px;
+}
+.navbar{
+  flex-wrap: nowrap;
 }
 .navbar-brand {
   margin: 0;
@@ -84,23 +84,26 @@ html {
   display: inline-block;
 }
 .nav-link{
-  padding: 15px 0 14px 0 !important;
+  padding: 21px 0 14px 0 !important;
+}
+.menu-icon .nav-link{
+  padding: 0 0 0 0 !important;
 }
 .nav-link::after {
   display: none;
 }
 
 .home-dropdown {
-  padding-left:53px;
-  padding-right:33px;
+  margin-left:46px;
+  margin-right:33px;
 }
 
 .shop-dropdown {
-  padding-right: 37px;
+  margin-right: 37px;
 }
 
 .page-dropdown {
-  padding-right:36px;
+  margin-right:36px;
 }
 
 
@@ -112,29 +115,49 @@ html {
   font-size: 11px;
 }
 
-.menu-icon-header{
-  padding-left: 30px;
+.menu-icon-header {
+	margin-left: 90px;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 1px;
 }
 
 .menu-icon {
-  padding: 7px 26px 0 0;
-
+  margin: 7px 26px 0 0;
+  display: flex;
+  align-items: center;
 }
-
+.padding-right{
+  padding-right: 0 !important;
+}
 .menu-icon:last-child {
-  padding-bottom: 9px;
-  padding-left: 54px;
+  /* padding-bottom: 9px; */
+  margin-left: 37px;
   position: relative;
-  padding-right: 0;
+  margin-right: 0;
+  margin-top :0;
 }
 .circle {
-  position: absolute;
+  /* position: absolute; */
   width: 55px;
   height: 55px;
   border-radius: 50%;
   box-shadow: 0px 0px 15px 2px #e0e0e0;
-  top: 4px;
-  left: 35px;
+  /* top: -21px;
+  left: -18px; */
+  background: white;
+  /* z-index: 9; */
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+.nav-link img{
+  /* position: absolute;
+  top: 18px;
+  left: 19px; */
+  z-index: 10;
 }
 
 .menu-icon i {
@@ -166,16 +189,16 @@ html {
 }
 
 .shop-badge {
-  position: absolute;
-  font-size: 10px;
-  color: white;
-  background: #c44860;
-  padding: 2px 11px;
-  border-radius: 10px;
-  bottom: 38px;
-  right: 47px;
-  font-family: 'Raleway';
-  font-weight: 600;
+	position: absolute;
+	font-size: 10px;
+	color: white;
+	background: #c44860;
+	padding: 3px 11px;
+	border-radius: 999px;
+	bottom: 38px;
+	right: 10px;
+	font-family: 'Raleway';
+	font-weight: 600;
 }
 
 .background {
@@ -420,10 +443,10 @@ h5 {
 
 .add-to-cart-btn {
   border: transparent;
-  border-radius: 80px;
+  border-radius: 999px;
   background:#fdeee1;
   color: black;
-  padding: 13.5px 38.5px 13.5px 38.5px;
+  padding: 14px 40px;
   font-size: 18px;
   transition: 0.3s;
 }
@@ -495,7 +518,7 @@ h5 {
   font-family: 'Raleway';
   font-size: 18px;
   transition: 0.3s;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 .normal-button-sm{
   padding: 9px 30px;
@@ -511,7 +534,7 @@ h5 {
 .normal-button-sm-wrapper, .normal-button-xs-wrapper, .normal-button-wrapper{
   display: inline-block;
   position: relative;
-  height: 100%;
+  /* height: 100%; */
 }
 .normal-button-sm-wrapper::after{
   content: "Height = 40px";
@@ -522,7 +545,7 @@ h5 {
   font-size: 15px;
   color: #989495;
 }
-.normal-button-xs-wrapper::after{
+/* .normal-button-xs-wrapper::after{
   content: "Height = 32px";
   position: absolute;
   bottom: -46px;
@@ -530,7 +553,7 @@ h5 {
   font-family: 'Domine';
   font-size: 15px;
   color: #989495;
-}
+} */
 .normal-button-wrapper::after{
   content: "Height = 55px";
   position: absolute;

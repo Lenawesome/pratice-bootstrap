@@ -1,0 +1,34 @@
+.menu {
+  text-align: center;
+  background-color: rgb(31, 123, 209);
+  span {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(31, 123, 209);
+    position: relative;
+
+    &:hover>nav {
+      display: inline-block;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: black;
+      color: #ffffff;
+    }
+
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    nav nav{
+      top: 0%;
+      left: 100%;
+    }
+  }
+
+}
