@@ -472,12 +472,14 @@
 .discount-deal {
     margin-top: 111px;
     position: relative;
-    .deal-img{
-        img{
-            width: 100%;
+
+    .deal-img {
+        img {
+            // width: 100%;
             height: auto;
         }
     }
+
     .deal-txt-wrapper {
         position: absolute;
         top: 20%;
@@ -531,7 +533,7 @@
                 }
             }
 
-            p {
+            .para {
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
@@ -542,9 +544,10 @@
                 font-family: Domine;
                 font-size: 18px;
                 font-weight: 400;
-                margin-top: 20px;
+                margin-top: 19px;
                 line-height: 29px;
-                margin-bottom: 46px;
+                letter-spacing: 0.44px;
+                margin-bottom: 25px;
             }
 
             .view {
@@ -612,8 +615,10 @@
 
         .new-product-wrapper {
             margin-bottom: 12px;
+
             .item-hover {
                 padding: 0 15px;
+
                 .item {
                     padding: 0;
 
@@ -621,13 +626,16 @@
                         min-height: 1px;
                         width: 100%;
                     }
-                    .quick-action{
+
+                    .quick-action {
                         justify-content: space-evenly;
-                        .normal-button-xs{
+
+                        .normal-button-xs {
                             margin: 0 auto;
                         }
-                        .text-content{
-                            margin: 0 auto; 
+
+                        .text-content {
+                            margin: 0 auto;
                             padding: 0;
                         }
                     }
@@ -637,9 +645,52 @@
         }
     }
 }
-.best-seller .best-seller-product .new-product-wrapper .item-hover .best-seller-info{
+
+.best-seller .best-seller-product .new-product-wrapper .item-hover .best-seller-info {
     padding: 28px 0 0 0;
-    .product-info{
+
+    .product-info {
         letter-spacing: 1.1px;
+    }
+}
+
+.newsletter {
+    background-color: #e5c8c3;
+    position: relative;
+    top: -78px;
+    min-height: 239px;
+    display: flex;
+    align-items: center;
+    .newsletter-content-wrapper {
+        min-width: 1170px;
+        margin: 0 auto;
+        // padding: 50px 0;
+        .newsletter-title {
+            position: relative;
+            line-height: 1;
+            
+            .background-name {
+                position: absolute;
+                font-size: 120px;
+                opacity: 0.1;
+                top: 0%;
+                left: 0%;
+                &::first-letter {
+                    font-size: 150px;
+                }
+            }
+            .heading-title {
+                font-size: 35px;
+                padding-bottom: 22px;
+                line-height: 0.8;
+            }
+
+            .newsletter-sub-title {
+                font-size: 18px;
+                font-family: Domine;
+                letter-spacing: 0.45px;
+            }
+        }
+
     }
 }
