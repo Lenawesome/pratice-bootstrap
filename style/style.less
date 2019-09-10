@@ -475,7 +475,7 @@
 
     .deal-img {
         img {
-            // width: 100%;
+            width: 100%;
             height: auto;
         }
     }
@@ -657,28 +657,32 @@
 .newsletter {
     background-color: #e5c8c3;
     position: relative;
-    top: -78px;
+    top: -49px;
     min-height: 239px;
     display: flex;
     align-items: center;
+
     .newsletter-content-wrapper {
-        min-width: 1170px;
+        width: 60.9375%;
         margin: 0 auto;
+
         // padding: 50px 0;
         .newsletter-title {
             position: relative;
             line-height: 1;
-            
+
             .background-name {
                 position: absolute;
                 font-size: 120px;
                 opacity: 0.1;
-                top: 0%;
-                left: 0%;
+                top: -74%;
+                left: -19%;
+
                 &::first-letter {
                     font-size: 150px;
                 }
             }
+
             .heading-title {
                 font-size: 35px;
                 padding-bottom: 22px;
@@ -689,6 +693,49 @@
                 font-size: 18px;
                 font-family: Domine;
                 letter-spacing: 0.45px;
+            }
+        }
+
+        .submit-field {
+            display: flex;
+            align-items: center;
+
+            .email-wrapper {
+                position: relative;
+
+                input[type="email"] {
+                    border: 1px solid white;
+                    border-radius: 99999px;
+                    padding: 10px 5px;
+                    min-width: 500px;
+                    height: 50px;
+                    background-color: transparent;
+                }
+
+                &::after {
+                    content: ">";
+                    width: 25px;
+                    height: 25px;
+                    line-height: 22px;
+                    background: #c44860;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    right: -18px;
+                    transform: translateY(-50%);
+                }
+
+                input[type="submit"] {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    border: 1px solid white;
+                    border-radius: 0 9999px 9999px 0;
+                    background: white;
+                    color: black;
+                }
             }
         }
 
