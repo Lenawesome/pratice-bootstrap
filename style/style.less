@@ -329,15 +329,14 @@
             &.new::after,
             &.hot::after {
                 position: absolute;
-                top: 29px;
-                left: 15px;
-                line-height: 1;
+                top: 8%;
+                left: 5.1%;
+                line-height: 1.5em;
                 text-align: center;
-                padding: 7px 20px;
                 font-size: 12.89px;
                 letter-spacing: 3px;
                 transform: rotate(270deg);
-                min-width: 82.75px;
+                width: 27.6%;
             }
 
             .quick-action-wrapper {
@@ -473,7 +472,12 @@
 .discount-deal {
     margin-top: 111px;
     position: relative;
-
+    .deal-img{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
     .deal-txt-wrapper {
         position: absolute;
         top: 20%;
@@ -570,7 +574,7 @@
     z-index: 9999;
 
     .new-arrivals-heading {
-        padding: 100px 100px;
+        padding: 100px 100px 20px 100px;
         display: flex;
         justify-content: space-between;
 
@@ -602,88 +606,40 @@
         }
     }
 
-    .new-products {
-        .product-item {
-            img{
-                width: 100%;
+    .best-seller-product {
+        max-width: 1000px;
+        margin: 0 auto;
 
-            }
-            position: relative;
-            &:hover .quick-action-wrapper{
-                transform: scaleX(1);
-                opacity: 1;
-            }
-            .quick-action-wrapper {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                padding: 30px;
-                // justify-content: center;
-                // align-items: center;
-                // display: none;
-                transform: scaleX(0);
-                transition: all 0.4s;
-                opacity: 0;
-            }
+        .new-product-wrapper {
+            margin-bottom: 12px;
+            .item-hover {
+                padding: 0 15px;
+                .item {
+                    padding: 0;
 
-            .quick-action {
-                // position: absolute;
-                // top: 50%;
-                // left: 50%;
-                // transform: translate(-50%, -50%);
-                background: white;
-                text-align: center;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                -webkit-box-shadow: 0px 2px 30px 0px rgba(133, 133, 133, 0.25);
-                -moz-box-shadow: 0px 2px 30px 0px rgba(133, 133, 133, 0.25);
-                box-shadow: 0px 2px 30px 0px rgba(133, 133, 133, 0.25);
-
-                // width: 73%;
-                // opacity: 0;
-                .txt-content {
-                    color: #adaaab;
-                    font-size: 15px;
-                    font-family: Domine;
-                    line-height: 23px;
-                    max-width: 80%;
-                    margin: 0 auto;
-                    /* fallback */
-                    // max-height: 32px;
-                    /* fallback */
-                    /* number of lines to show */
-                    margin-bottom: 29px !important;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    text-overflow: ellipsis; // dau 3 cham
-                }
-
-                .action-btn {
-                    // outline: none;
-                    // box-shadow: none;
-                    border: 1px solid #e9e9e9;
-                    border-radius: 50%;
-                    padding: 10px 10px;
-                    background: transparent;
-                    color: #a5a0a1;
-                    font-size: 13px;
-
-                    &:hover {
-                        color: #c44860;
+                    img {
+                        min-height: 1px;
+                        width: 100%;
+                    }
+                    .quick-action{
+                        justify-content: space-evenly;
+                        .normal-button-xs{
+                            margin: 0 auto;
+                        }
+                        .text-content{
+                            margin: 0 auto; 
+                            padding: 0;
+                        }
                     }
                 }
-
-                .normal-button.normal-button-sm {
-                    margin: 0 auto 31px auto;
-                }
             }
+
         }
+    }
+}
+.best-seller .best-seller-product .new-product-wrapper .item-hover .best-seller-info{
+    padding: 28px 0 0 0;
+    .product-info{
+        letter-spacing: 1.1px;
     }
 }
