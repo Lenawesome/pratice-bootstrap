@@ -4,7 +4,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 890px;
+    height: 100vh;
+    max-height: 890px;
+}
+@media screen and (max-width: 1205px){
+    /* .slider-img{
+        height: 100vh !important;
+    } */
+    /* .owl-carousel-wrapper .slider-txt .heading-title .title-size{
+        font-size: 100px !important;
+    }
+    .owl-carousel-wrapper .slider-txt .sub-title .sub-title-size{
+        font-size:15px;
+    } */
 }
 
 .menu-wrapper {

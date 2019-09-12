@@ -1,5 +1,6 @@
 @sale-color: #fec104;
 @center-width: 60.9375%;
+
 .menu-wrapper {
     position: fixed;
     padding: 33px 0;
@@ -593,6 +594,10 @@
             font-weight: 500;
             width: 23%;
 
+            @media screen and (max-width: 1000px) {
+                width: 35%;
+            }
+
             nav {
                 display: flex;
                 height: 100%;
@@ -647,7 +652,7 @@
 }
 
 .best-seller .best-seller-product .new-product-wrapper .item-hover .best-seller-info {
-    padding: 28px 0 0 0;
+    padding: 28px 0 10px 0;
 
     .product-info {
         letter-spacing: 1.1px;
@@ -657,7 +662,7 @@
 .newsletter {
     background-color: #e5c8c3;
     position: relative;
-    top: -49px;
+    top: -57px;
     min-height: 239px;
     display: flex;
     align-items: center;
@@ -700,12 +705,18 @@
         .submit-field {
             display: flex;
             align-items: center;
+            position: relative;
 
             .email-wrapper {
                 position: relative;
                 margin-top: 5px;
                 margin-left: 10px;
                 width: 53.7662%;
+                transition: 0.5s;
+                &.expanded {
+                    width: 75.77%;
+                    transition: 0.5s;
+                }
 
                 input[type="email"] {
                     border: 1px solid white;
@@ -719,6 +730,7 @@
                     letter-spacing: 0.4px;
                     width: 100%;
                     border-right-color: transparent;
+
                 }
 
                 // &::after {
@@ -746,22 +758,23 @@
                     background-color: #c44860;
                     position: absolute;
                     top: 50%;
-                    right: -47.5%;
+                    right: -200px;
                     transform: translate(22%, -45%);
                     z-index: 999;
                     transition: 0.5s;
 
-                    &.moved {
-                        right: -84.5%;
-                    }
+                    // &.moved {
+                    //     right: -84.5%;
+                    //     transition: 0.5s;
+                    // }
                 }
 
                 input[type="submit"] {
                     position: absolute;
                     top: 0;
-                    right: -46%;
+                    right: -192px;
                     height: 100%;
-                    width: 47.5%;
+                    width: 199.2px;
                     border: 1px solid white;
                     border-radius: 0 9999px 9999px 0;
                     background: white;
@@ -775,33 +788,28 @@
                     z-index: 2;
                 }
 
-                .social-link {
-                    position: absolute;
-                    color: white;
-                    width: 44%;
+            }
+
+            .social-link {
+                position: absolute;
+                color: white;
+                width: 182.5px;
+                display: flex;
+                height: 92%;
+                border-radius: 0 999px 999px 0;
+                border: 1px solid white;
+                top: 50%;
+                right: 4px;
+                transition: 0.5s;
+                transform: translateY(-45%);
+                z-index: 1;
+
+                .icon-wrapper {
+                    width: 101px;
                     display: flex;
-                    height: 100%;
-                    border-radius: 0 999px 999px 0;
-                    border: 1px solid white;
-                    top: 50%;
-                    right: -45%;
-                    transition: 0.5s;
-                    transform: translateY(-50%);
-
-                    &.expanded {
-                        right: -83%;
-                    }
-
-                    z-index: 1;
-
-                    // padding: 0px 26px 4px 51px;
-                    .icon-wrapper {
-                        width: 101px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin: 0px 0 6px 56px;
-                    }
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0px 0 6px 56px;
                 }
             }
         }
@@ -860,8 +868,9 @@
                         letter-spacing: 1px;
                         line-height: 1;
                         padding: 16px 0 10px 0;
-                        &.active{
-                            color:#c44860;
+
+                        &.active {
+                            color: #c44860;
                         }
                     }
 
@@ -872,14 +881,15 @@
                         padding: 13px 0;
                         line-height: 1;
                     }
-                   
+
                     &.links:hover {
                         color: #c44860;
-                        &::before{
+
+                        &::before {
                             display: inline-block;
                         }
                     }
-                
+
                     &::before {
                         // display: none;
                         content: "";
@@ -890,21 +900,24 @@
                         display: none;
                     }
                 }
-                .contact{
+
+                .contact {
                     margin: 13px 0 10px 4px;
                     display: flex;
                     align-items: center;
-                    >span{
+
+                    >span {
                         font-family: Domine;
                         font-weight: 700;
                         font-size: 18px;
                         padding-left: 16px;
                     }
-                    &~span{
+
+                    &~span {
                         padding: 15px 0 1px 4px;
                     }
                 }
-                
+
             }
 
             &:not(:first-child) {
@@ -916,29 +929,38 @@
 
 }
 
-.footer-background{
+.footer-background {
     position: relative;
     top: -15px;
     background-color: #f4f5f8;
-    .footer{
+
+    .footer {
         width: @center-width;
         margin: 0 auto;
         padding: 36px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .copy-right{
+
+        .copy-right {
             font-family: Domine;
             font-size: 14px;
             font-weight: 400;
         }
-        .payment-method-logo{
+
+        .payment-method-logo {
             width: 264px;
             display: flex;
             justify-content: space-between;
             position: relative;
             bottom: -7px;
-            
+
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .special-order {
+        order: 0;
     }
 }
