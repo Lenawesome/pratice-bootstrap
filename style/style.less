@@ -36,9 +36,9 @@
         }
 
         position: relative;
-        top: 42.6%;
-        left: 459px;
-        width: 683px;
+        // top: 42.6%;
+        // left: 459px;
+        // width: 683px;
 
         .sale {
             background: white;
@@ -49,7 +49,7 @@
             background-size: cover;
             // padding: 20px;
             position: absolute;
-            right: -32px;
+            right: -45px;
             top: -43px;
             z-index: 99;
             display: flex;
@@ -263,7 +263,6 @@
             height: 62px;
             opacity: 1 !important;
             color: black;
-
             &::after {
                 content: "";
                 position: absolute;
@@ -817,13 +816,24 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                @media screen and (max-width: 767px){
+                    border: none;
+                    margin-top: 30px;
+                    .icon-wrapper{
+                        width: 30% !important;
+                        margin-left: 0 !important;
+                    }
+                }
                 .icon-wrapper {
                     width: 56.33%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-left: 19%;
+                    i:hover{
+                        color: #c44860;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -969,7 +979,12 @@
 
         width:60.9375%;
         margin: 0 auto;
-
+        @media screen and (max-width: 1400px){
+            width: 80%;
+            .photo-wrapper{
+                padding-bottom: 10px !important ;
+            }
+        }
         .photo-wrapper {
             padding: 0 10px;
 
@@ -985,7 +1000,9 @@
 
         .aside-links {
             padding: 0 10px !important;
-
+            @media screen and (max-width: 1199px){
+                margin-bottom: 20px;
+            }
             nav {
                 >span {
                     cursor: pointer;
@@ -1036,7 +1053,9 @@
                     margin: 13px 0 10px 4px;
                     display: flex;
                     align-items: center;
-
+                    @media screen and (max-width: 1199px){
+                        justify-content: center;
+                    }   
                     >span {
                         font-family: Domine;
                         font-weight: 700;

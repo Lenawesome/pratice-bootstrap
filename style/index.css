@@ -4,10 +4,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    max-height: 890px;
+    /* height: 100vh;
+    max-height: 890px; */
 }
-@media screen and (max-width: 1205px){
+.slider-txt-wrapper .heading-title .text-gradient{
+    padding-right: 30px !important;
+    margin-right: -30px !important;
+}
+@media screen and (max-width: 1205px) {
     /* .slider-img{
         height: 100vh !important;
     } */
@@ -33,14 +37,16 @@
     align-items: flex-end;
     justify-content: center;
     width: 1170px; */
-    width: 1170px;
-    height: 100%;
     margin: 0 auto;
+    top: 42.7%;
+    right: 21.7%;
+    position: absolute;
+}
+
+.img-wrapper {
     position: relative;
 }
-.slider-img img{
-    width: 100%;
-}
+
 .slider-txt-wrapper {
     /* text-align: center;
     padding: 103px 0 0 54px;
@@ -52,80 +58,100 @@
 }
 
 .text-gradient {
-    background: -moz-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(196,72,96,1)), color-stop(1%, rgba(196,72,96,1)), color-stop(100%, rgba(244,174,123,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(270deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* ie10+ */
-    background: linear-gradient(180deg, rgba(196,72,96,1) 0%, rgba(196,72,96,1) 1%, rgba(244,174,123,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c44860', endColorstr='#f4ae7b',GradientType=0 ); /* ie6-9 */
+    background: -moz-linear-gradient(270deg, rgba(196, 72, 96, 1) 0%, rgba(196, 72, 96, 1) 1%, rgba(244, 174, 123, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(196, 72, 96, 1)), color-stop(1%, rgba(196, 72, 96, 1)), color-stop(100%, rgba(244, 174, 123, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(196, 72, 96, 1) 0%, rgba(196, 72, 96, 1) 1%, rgba(244, 174, 123, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(196, 72, 96, 1) 0%, rgba(196, 72, 96, 1) 1%, rgba(244, 174, 123, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(196, 72, 96, 1) 0%, rgba(196, 72, 96, 1) 1%, rgba(244, 174, 123, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(180deg, rgba(196, 72, 96, 1) 0%, rgba(196, 72, 96, 1) 1%, rgba(244, 174, 123, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c44860', endColorstr='#f4ae7b', GradientType=0);
+    /* ie6-9 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 0;
     line-height: 1;
 }
-.title-size{
-    font-size:140px !important;
+
+.title-size {
+    font-size: 140px !important;
     letter-spacing: -3.5px;
     margin-bottom: 2px;
 }
-.raleway-font-regular{
+
+.raleway-font-regular {
     font-family: 'Raleway';
     font-weight: 400;
 }
-.semi-bold{
+
+.semi-bold {
     font-weight: 600;
 }
-.sub-title-size{
+
+.sub-title-size {
     font-size: 25px;
     text-align: center;
     padding: 0;
     margin-bottom: 9px;
 }
-.sub-title{
-    margin-left: 66px;
+
+.sub-title {
+    margin-left: 77px;
 }
-.btn-wrap{
+
+.btn-wrap {
     margin-top: 20px;
-    margin-left: 63px;
+    margin-left: 79px;
     text-align: center;
 }
+
 /* Owl dot pagination */
-.owl-carousel-wrapper{
+.owl-carousel-wrapper {
     position: relative;
 }
-.owl-carousel-home .owl-dots{
-    transform:rotate(90deg);
+
+.owl-carousel-home .owl-dots {
+    transform: rotate(90deg);
     position: absolute;
     top: 30%;
 }
-.owl-theme .owl-dots .owl-dot span{
+
+.owl-theme .owl-dots .owl-dot span {
     background: transparent;
     margin: 0 !important;
     padding: 0 !important;
 }
-.owl-theme .owl-dots .owl-dot.active span{
+
+.owl-theme .owl-dots .owl-dot.active span {
     background: #c44860;
-    width:5px;
+    width: 5px;
     height: 5px;
     border-radius: 50%;
-    margin:3px !important;
+    margin: 3px !important;
     padding: 0 !important;
-    
+
 }
-.owl-carousel button.owl-dot{
+
+.owl-carousel button.owl-dot {
     border-radius: 50%;
     border: 2px solid #efd5d8;
-    width: 15px; 
+    width: 15px;
     height: 15px;
     margin-right: 10px;
 }
-.owl-theme .owl-dots .owl-dot:hover span{
+
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #c44860;
-    width:5px;
+    width: 5px;
     height: 5px;
     border-radius: 50%;
-    margin:3px !important;
+    margin: 3px !important;
     padding: 0 !important;
 }
+
 /* end pagination dot */
